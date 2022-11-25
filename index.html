@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Maze Solver</title>
+    <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+		<link rel="stylesheet" type="text/css" href="css/grid.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+		<script type="text/javascript" src="js/properties.js"></script>
+		<script type="text/javascript" src="js/maze_generators.js"></script>
+		<script type="text/javascript" src="js/maze_solvers.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/visualizer.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <div id="menu">
+			<div id="menu_title_div">
+				<span id="menu_title">Settings</span>
+			</div>
+
+			<br><br>
+
+			<div class="choice" id="choice_1">
+				<span class="choice_label" id="choice_label_1">Maze Solving Algorithm</span>
+				<label class="select" for="slct_1">
+					<select id="slct_1" required="required">
+						<option selected value="1">Breadth-First</option>
+						<option value="4">Dijkstra</option>
+					</select>
+					<svg>
+						<use xlink:href="#select-arrow-down"></use>
+					</svg>
+				</label>
+			</div>
+
+			<div class="choice" id="choice_2">
+				<span class="choice_label" id="choice_label_2">Maze Generation Algorithm</span>
+				<label class="select" for="slct_2">
+					<select id="slct_2" required="required">
+						<option hidden selected value="0">Custom</option>
+						<option value="1">Randomized Depth-First</option>
+						<option value="4">Wilson's Algorithm</option>
+					</select>
+					<svg>
+						<use xlink:href="#select-arrow-down"></use>
+					</svg>
+				</label>
+			</div>
+
+			<div id=button_1>
+				<button class="my_button" id="clear">Clear</button>
+			</div>
+
+			<div id=button_2>
+				<button class="my_button" id="play">Play</button>
+			</div>
+		</div>
+
+		<div id="visualizer">
+			<div id="grid"></div>
+		</div>
+  </body>
+</html>
